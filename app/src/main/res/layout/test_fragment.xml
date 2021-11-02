@@ -15,7 +15,7 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/d1"
             style="@style/HY.Test"
-            android:text="D1" />
+            android:text="Home" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/d2"
