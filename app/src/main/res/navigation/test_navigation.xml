@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_test"
+    app:startDestination="@+id/d1_fragment">
+
+    <fragment
+        android:id="@+id/d1_fragment"
+        android:name="com.example.multiplenavgraphwithbottomnav.testui.TestHomeFragment"
+        android:label="Test Home Label"
+        app:route="d1"
+        tools:layout="@layout/test_home_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/d2_fragment"
+        android:name="com.example.multiplenavgraphwithbottomnav.testui.D2Fragment"
+        android:label="D2 Label"
+        app:route="d2"
+        tools:layout="@layout/test_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/d3_fragment"
+        android:name="com.example.multiplenavgraphwithbottomnav.testui.D3Fragment"
+        android:label="D3 Label"
+        app:route="d3"
+        tools:layout="@layout/test_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/d4_fragment"
+        android:name="com.example.multiplenavgraphwithbottomnav.testui.D4Fragment"
+        android:label="D4 Label"
+        app:route="d4"
+        tools:layout="@layout/test_fragment">
+
+    </fragment>
+
+</navigation>

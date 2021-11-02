@@ -1,0 +1,73 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.example.multiplenavgraphwithbottomnav"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11.toString()
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+dependencies {
+    implementation Libs.kotlinStdlibJdk8
+    implementation Libs.androidxCore
+    implementation Libs.fragment
+    implementation Libs.appCompat
+    implementation Libs.material
+    implementation Libs.constraintLayout
+    implementation Libs.gson
+    implementation Libs.retrofit
+    implementation Libs.glideOkhttp3
+    implementation Libs.okhttp
+    implementation HYLibs.multidex
+    implementation HYLibs.chucker
+
+    // firebase
+    implementation platform(Libs.firebaseBom)
+    implementation Libs.firebaseAnalytics
+    implementation Libs.firebaseCrashlytics
+
+    //hilt
+    implementation Libs.hilt
+    kapt Libs.hiltAndroidCompiler
+
+    //Navigation
+    implementation HYLibs.navigationUI
+    implementation HYLibs.navigationFragment
+
+    testImplementation Libs.junit
+    androidTestImplementation HYLibs.testExtJunit
+    androidTestImplementation Libs.espressoCore
+}

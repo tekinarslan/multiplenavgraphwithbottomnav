@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:weightSum="4"
+        android:layout_height="60dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/d1"
+            style="@style/HY.Test"
+            android:text="D1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/d2"
+            style="@style/HY.Test"
+            android:text="D2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/d3"
+            style="@style/HY.Test"
+            android:text="D3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/d4"
+            style="@style/HY.Test"
+            android:text="D4" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/stackMainTitle"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Main Nav"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/stackMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/stackTitle"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Home Nav"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/stack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_4"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_height="60dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/a4"
+            style="@style/HY.Test"
+            android:text="A4" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/b4"
+            style="@style/HY.Test"
+            android:text="B4" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/c4"
+            style="@style/HY.Test"
+            android:text="C4" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_3"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_height="60dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/a3"
+            style="@style/HY.Test"
+            android:text="A3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/b3"
+            style="@style/HY.Test"
+            android:text="B3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/c3"
+            style="@style/HY.Test"
+            android:text="C3" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_height="60dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/a2"
+            style="@style/HY.Test"
+            android:text="A2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/b2"
+            style="@style/HY.Test"
+            android:text="B2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/c2"
+            style="@style/HY.Test"
+            android:text="C2" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_height="60dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/a1"
+            style="@style/HY.Test"
+            android:text="A1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/b1"
+            style="@style/HY.Test"
+            android:text="B1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/c1"
+            style="@style/HY.Test"
+            android:text="C1" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="66dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

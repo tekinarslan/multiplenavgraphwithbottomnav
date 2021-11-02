@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath Libs.buildGradlePlugin
+        classpath Libs.kotlinGradlePlugin
+        classpath Libs.googleServices
+        classpath Libs.firebaseCrashlyticsGradle
+        classpath Libs.hiltGradlePlugin
+        classpath Libs.firebaseAppDistributionGradle
+        classpath HYLibs.safeArgs
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

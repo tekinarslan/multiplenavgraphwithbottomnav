@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/test_a"
+        android:icon="@drawable/selector_tab_discover"
+        android:title="A" />
+    <item
+        android:id="@+id/test_b"
+        android:icon="@drawable/selector_tab_food_universe"
+        android:title="B" />
+    <item
+        android:id="@+id/test_c"
+        android:icon="@drawable/selector_tab_campaigns"
+        android:title="C" />
+</menu>
